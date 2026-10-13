@@ -1,0 +1,89 @@
+@media (max-width: 960px) {
+  .site-header {
+    grid-template-columns: auto 1fr auto;
+    gap: 0.75rem;
+  }
+
+  .site-header__logo .display-title {
+    font-size: 0.95rem;
+    max-width: 14ch;
+    white-space: normal;
+    line-height: 1;
+  }
+
+  .site-header__cta {
+    padding: 0.7rem 0.95rem;
+    font-size: 0.8rem;
+  }
+
+  .circle-strip__row {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .reserve__grid,
+  .site-footer__grid,
+  .about-story__grid,
+  .contact-page__grid,
+  .about-reasons__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .menu-page__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .events-page__card {
+    grid-template-columns: 1fr;
+  }
+
+  .events-page__body {
+    padding: 0 1.15rem 1.15rem;
+  }
+
+  .reserve__row {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 720px) {
+  .site-header__menu span:last-child {
+    display: none;
+  }
+
+  .intro__headline {
+    max-width: 14ch;
+    font-size: clamp(1.85rem, 9vw, 2.6rem);
+  }
+
+  .circle-strip__row {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0.65rem;
+  }
+
+  .circle-strip__label {
+    font-size: 0.85rem;
+  }
+
+  .signature__row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .loved__card {
+    flex: 0 0 72vw;
+  }
+
+  .menu-page__grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 520px) {
+  .hero__brand {
+    font-size: clamp(2.8rem, 14vw, 3.6rem);
+  }
+
+  .site-header__mark {
+    display: none;
+  }
+}
